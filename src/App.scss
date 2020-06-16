@@ -1,0 +1,386 @@
+@import './Layout';
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+$black: #000000;
+$orangey-yellow: #f9b826;
+$purplish-brown: #382e36;
+$tomato: #dc3728;
+$squash: #ec9f23;
+$brick: #be3728;
+$navy-green: #3d5107;
+$orange-yellow: #ffaa00;
+$booger: #8ac340;
+$sap-green: #68931c;
+$dull-orange: #e2aa48;
+$tomato-two: #db1d19;
+$rusty-red-two: #af130e;
+$yellowish-green: #b2dd14;
+$poo-brown: #884d00;
+$brownish-grey: #686868;
+$greyish: #b7b5b5;
+$rusty-red: #a80e0e;
+$white: #ffffff;
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/******* Common CSS *******/
+
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+/****** landing page CSS ********/
+
+.jumbotron {
+  background-image: url('./assets/images/banner@3x.png');
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.logo-container {
+  margin: 10px;
+  img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    margin: 10px 0;
+  }
+}
+
+.nav-bar{
+  opacity: 0.61;
+  background-color: #281923;
+  color: #FFF;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    height: 55px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.menu-bar{
+  height: 54.5px;
+  background-color: $rusty-red;
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    height: 55px;
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    padding: 0;
+  }
+}
+
+.jumbotron-text{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  .party-time {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: 1.44px;
+    margin: 0 auto;
+    @extend .text-center;
+  }
+  .offer-text {
+    background-image: url('./assets/images/Group\ 1389.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #FFF;
+      font-size: 15px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: 0.33px;
+      width: 50%;
+    }
+  }
+  .order-now-btn {
+    background: #ffaa00;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    min-width: 150px;
+    color:$rusty-red;
+    font-size: 13.5px;
+    line-height: 0.85;
+    letter-spacing: 0.41px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+  .right-arrow{
+    padding-left:10px;
+    font-size:10px;
+  }
+}
+.white-pattern {
+  margin-top: -25px;
+  width: 100%;
+}
+
+.want-to-eat {
+  padding: 40px;
+  @extend .text-center;
+  h3 {
+    line-height: 2;
+    letter-spacing: 0.75px;
+    font-weight: normal;
+    font-size: 25px;
+    color: $rusty-red;
+    margin: 0;
+  }
+  p {
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 3.5;
+    letter-spacing: normal;
+  }
+  .food-items-container {
+    margin-top: 40px;
+    .food-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 2.5px;
+      box-shadow: 0 7.5px 7.5px 0 rgba(0, 0, 0, 0.07);
+      padding: 15px;
+      margin: 5px;
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+      }
+      span {
+        margin-top: 15px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.feature-container{
+  @extend .text-center;
+  background-color: $orange-yellow;
+  .feature{
+    margin-top:20px;
+    padding: 20px 0px 20px 0px;
+  }
+  .yellow-pattern{
+    margin-top:-18px;
+    width:100%
+  }
+  .feature-card{
+    height:175px;
+    box-shadow: 0 7.5px 7.5px 0 rgba(0, 0, 0, 0.07);
+    background-color: white;
+    margin:20px;
+    padding:20px;
+    border-radius: 2%;
+    transition: all .3s linear;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img{
+      height:40px;
+      width:40px;
+      object-fit: contain;
+    }
+    p{
+      margin-top:15px;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: $black;
+      min-height: 60px;
+    }
+    .card-rect{
+      background-color: $orange-yellow;
+      height: 2px;
+      width: 30px
+    }
+    span{
+      margin-top:10px;
+      line-height: 1.56;
+      letter-spacing: 0.24px;
+      text-align: center;
+      color: $brownish-grey;
+      font-family: Montserrat-Light;
+      font-size: 8px;
+      font-weight: 200;
+      font-stretch: normal;
+      font-style: normal;
+    }
+  }
+}
+
+.testimonial-container {
+  padding: 40px 60px;
+  margin-bottom: 50px;
+  .testimonial-bg {
+    height: 150px;
+    width: 150px;
+    background: $rusty-red;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -50px;
+    z-index: -1;
+  }
+  .testimonial-image {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    margin-left: 60px;
+  }
+  .testimonial {
+    p.comment {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 2;
+      letter-spacing: 0.3px;
+    }
+    p.author {
+      font-size: 14px;
+      &:after {
+        position: absolute;
+        /* left: 0; */
+        height: 20px;
+        z-index: 1;
+        border-bottom: 1px solid $rusty-red;
+        width: 20px;
+        top: -12px;
+        margin-left: 10px;
+      }
+    }
+    p.author-detail {
+      font-size: 10px;
+      font-weight: 200;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brownish-grey;
+    }
+  }
+}
+
+.white-pattern-bottom {
+  width: 100%;
+  margin-top: -12px;
+}
+.pos-relative {
+  position: relative;
+}
+
+@media(max-width: 480px) {
+  .jumbotron-text .offer-text p {
+    width: 70%;
+  }
+  .want-to-eat {
+    padding: 10px;
+    .bottom-pattern {
+      width: 100%;
+    }
+  }
+  .testimonial-container {
+    padding: 10px;
+    .testimonial-image {
+      margin-left: 0;
+    }
+    .testimonial-bg {
+      display: none;
+    }
+  }
+  .white-pattern-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+  }
+  .feature-container { 
+    position: relative;
+    .yellow-pattern {
+      width: 100%;
+      position: absolute;
+      top: 15px;
+      left: 0;
+    }
+  }
+}
+@media(max-width:768px){
+  .testimonial{
+    margin-top: 65px;
+  }
+}
