@@ -13,12 +13,12 @@ function Menu(){
                         imgSrc={Brush1}
                         description="Try our Most Delicious food and it usually take minutes to deliver!"
                     />
-                    <div className="col-sm-10 col-sm-offset-1 food-items-container">
+                    <div className="col-sm-12 food-items-container">
                         <div className="row">
                             {
                                 foodItems.map((item,key) => {
                                     return (
-                                    <div className="col-sm-2 col-xs-6" key={key}>
+                                    <div className="col-md-2 col-sm-4 col-xs-6" key={key}>
                                         <div className="food-item">
                                         <img src={item.icon} alt="food-icon" />
                                         <span>{item.title}</span>

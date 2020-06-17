@@ -15,7 +15,7 @@ function Features(){
                     {
                     featureItems.map((item,key)=>{
                         return(
-                        <div className="col-sm-2 col-md-4 col-lg-4 col-xl-2 col-xs-12" key={key}>
+                        <div className="col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xs-12" key={key}>
                             <div className="feature-card">
                                 <img src={item.img} alt="feature"></img>
                                 <p className="m-0">{item.title}</p>

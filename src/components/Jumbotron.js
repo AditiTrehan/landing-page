@@ -8,7 +8,7 @@ function Jumbotron(){
             <div className="jumbotron">
                 <Header/>
                 <div className="jumbotron-text">
-                    <div className="col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-4">
+                    <div className="col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-4">
                     <p className="party-time">Party Time!</p>
                     <div className="offer-text">
                         <p>Buy any 2 burgers and get 1.5L Pepsi Free</p>

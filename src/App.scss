@@ -404,4 +404,14 @@ $white: #ffffff;
   .jumbotron-text .offer-text p {
     width: 50%;
   }
+  .testimonial{
+    margin-top:65px;
+  }
+}
+
+@media(max-width:576px){
+  .jumbotron-text .offer-text p {
+    width: 56%;
+    font-size:12px;
+  }
 }
