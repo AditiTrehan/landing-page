@@ -61,6 +61,7 @@ $white: #ffffff;
 .text-center {
   text-align: center;
 }
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -75,6 +76,10 @@ $white: #ffffff;
 
 .m-0 {
   margin: 0;
+}
+
+.pos-relative {
+  position: relative;
 }
 
 /****** landing page CSS ********/
@@ -110,7 +115,7 @@ $white: #ffffff;
     margin: 0 auto;
     height: 55px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -162,7 +167,9 @@ $white: #ffffff;
       font-style: normal;
       line-height: 1.33;
       letter-spacing: 0.33px;
-      width: 50%;
+      width: 40%;
+      padding-right:92px;
+      padding-top:8px;
     }
   }
   .order-now-btn {
@@ -170,7 +177,7 @@ $white: #ffffff;
     border-radius: 20px;
     border: none;
     padding: 10px 15px;
-    min-width: 150px;
+    min-width: 135px;
     color:$rusty-red;
     font-size: 13.5px;
     line-height: 0.85;
@@ -203,7 +210,7 @@ $white: #ffffff;
   p {
     font-size: 12px;
     font-weight: 300;
-    line-height: 3.5;
+    line-height: 2;
     letter-spacing: normal;
   }
   .food-items-container {
@@ -259,14 +266,14 @@ $white: #ffffff;
     p{
       margin-top:15px;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.5;
       letter-spacing: 0.3px;
       text-align: center;
       color: $black;
-      min-height: 60px;
+      min-height: 30px;
     }
     .card-rect{
       background-color: $orange-yellow;
@@ -293,11 +300,11 @@ $white: #ffffff;
   margin-bottom: 50px;
   .testimonial-bg {
     height: 150px;
-    width: 150px;
+    width: 160px;
     background: $rusty-red;
     border-radius: 8px;
     position: absolute;
-    bottom: -50px;
+    bottom: -33px;
     z-index: -1;
   }
   .testimonial-image {
@@ -315,15 +322,18 @@ $white: #ffffff;
     }
     p.author {
       font-size: 14px;
+      span{
+        background-color: $white;
+        padding-right: 10px;
+      }
       &:after {
         position: absolute;
-        /* left: 0; */
         height: 20px;
         z-index: 1;
-        border-bottom: 1px solid $rusty-red;
-        width: 20px;
+        border-bottom: 2px solid $rusty-red;
+        width: 30px;
         top: -12px;
-        margin-left: 10px;
+        content:""
       }
     }
     p.author-detail {
@@ -340,13 +350,16 @@ $white: #ffffff;
   width: 100%;
   margin-top: -12px;
 }
-.pos-relative {
-  position: relative;
-}
 
 @media(max-width: 480px) {
+  .nav-bar{
+    ul{
+      margin-left:-40px;
+    }
+  }
   .jumbotron-text .offer-text p {
-    width: 70%;
+    width: 52%;
+    font-size: 13px;
   }
   .want-to-eat {
     padding: 10px;
@@ -379,7 +392,16 @@ $white: #ffffff;
   }
 }
 @media(max-width:768px){
+  .jumbotron-text .offer-text p {
+    width: 43%;
+  }
   .testimonial{
     margin-top: 65px;
+  }
+}
+
+@media(max-width:1024px){
+  .jumbotron-text .offer-text p {
+    width: 50%;
   }
 }

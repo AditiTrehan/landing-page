@@ -19,7 +19,7 @@ function Testimonials(){
           <div className="col-sm-12">
             <div className="testimonial-container">
               <div className="row">
-                <div className="col-xs-12 col-sm-4 col-sm-offset-1 col-md-10 col-md-offset-2 col-lg-4 col-lg-offset-1" style={{position: "relative"}}>
+                <div className="col-xs-12 col-sm-4 col-sm-offset-1 col-md-10 col-md-offset-2 col-lg-4 col-lg-offset-1 pos-relative" >
                   <div>
                     <div className="testimonial-bg"></div>
                     <img className="testimonial-image" src={TestimonialImage} alt="" />
@@ -29,7 +29,7 @@ function Testimonials(){
                   <div className="testimonial">
                     <img width={50} height={42} src={Quote} alt="" />
                     <p className="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <p className="author">Nina Margaret</p>
+                    <p className="author pos-relative"><span>Nina Margaret</span></p>
                     <p className="author-detail">CEO, Abc Company</p>
                   </div>              
                 </div>
