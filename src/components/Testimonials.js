@@ -19,7 +19,7 @@ function Testimonials(){
           <div className="col-sm-12">
             <div className="testimonial-container">
               <div className="row">
-                <div className="col-xs-12 col-sm-4 col-sm-offset-1 col-md-9 col-md-offset-3 col-lg-4 col-lg-offset-1 pos-relative" >
+                <div className="text-center col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-1 pos-relative" >
                   <div>
                     <div className="testimonial-bg"></div>
                     <img className="testimonial-image" src={TestimonialImage} alt="" />
